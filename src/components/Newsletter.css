@@ -1,0 +1,133 @@
+.newsletter-section {
+    padding: 6rem 0;
+    width: 100%;
+    background-color: var(--color-secondary);
+}
+
+.newsletter-container {
+    display: flex;
+    justify-content: center;
+    /* max-width is handled by .container */
+}
+
+.newsletter-content {
+    background-color: #fff;
+    padding: 4rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    width: 100%;
+}
+
+.newsletter-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+.newsletter-desc {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--font-body);
+}
+
+.newsletter-form {
+    max-width: 500px;
+    margin: 0 auto 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.input-group:focus-within {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: none;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+.newsletter-input:focus {
+    outline: none;
+}
+
+.newsletter-btn {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 0 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-btn:hover {
+    background-color: var(--color-accent);
+}
+
+.newsletter-note {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .newsletter-section {
+        padding: 4rem 1rem;
+        background-color: transparent;
+        /* Cleaner look on mobile */
+    }
+
+    .newsletter-content {
+        padding: 2rem 1.5rem;
+        box-shadow: none;
+        /* Remove shadow on mobile for flatter look */
+        border: 1px solid #eee;
+    }
+
+    .input-group {
+        flex-direction: column;
+        border: none;
+        gap: 1rem;
+        background: transparent;
+    }
+
+    .newsletter-input {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .newsletter-btn {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 4px;
+    }
+
+    .newsletter-title {
+        font-size: 2rem;
+    }
+}
