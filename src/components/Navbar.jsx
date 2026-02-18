@@ -19,7 +19,9 @@ const Navbar = () => {
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="navbar-container container">
                 <div className="navbar-logo">
-                    <Link to="/">SADHARAN</Link>
+                    <Link to="/">
+                        <img src="/logo.png" alt="SADHARAN" className="navbar-logo-img" />
+                    </Link>
                 </div>
 
                 <div className={`navbar-links ${mobileMenuOpen ? 'active' : ''}`}>
@@ -30,13 +32,6 @@ const Navbar = () => {
                 </div>
 
                 <div className="navbar-icons">
-                    <button aria-label="Search" className="icon-btn">
-                        <Search size={20} strokeWidth={1.5} />
-                    </button>
-                    <button aria-label="Cart" className="icon-btn cart-btn">
-                        <ShoppingBag size={20} strokeWidth={1.5} />
-                        <span className="cart-badge">0</span>
-                    </button>
                     <button
                         className="mobile-menu-btn"
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

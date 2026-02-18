@@ -144,3 +144,22 @@
         padding: 1rem;
     }
 }
+
+.success-message {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-primary);
+    background-color: #f7f9f7;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+}
+
+.success-icon {
+    color: green;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}

@@ -37,15 +37,15 @@ const Contact = () => {
                 <div className="contact-info">
                     <div className="info-item">
                         <h3>Email Us</h3>
-                        <p>hello@sadharan.com</p>
+                        <p>info@sadh7.com</p>
                     </div>
                     <div className="info-item">
                         <h3>Visit Us</h3>
-                        <p>123 Fashion Street, New Delhi, India</p>
+                        <p>Kanpur, UP</p>
                     </div>
                     <div className="info-item">
                         <h3>Follow Us</h3>
-                        <p>@sadharan_official</p>
+                        <p>@sadharan.co.in</p>
                     </div>
                 </div>
 

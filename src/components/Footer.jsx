@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import { downloadEmails } from '../utils/emailSaver.js';
 import './Footer.css';
 
 const Footer = () => {
@@ -5,8 +7,17 @@ const Footer = () => {
         <footer className="footer">
             <div className="container footer-container">
                 <div className="footer-brand">
-                    <h2 className="footer-logo">SADHARAN</h2>
-                    <p>&copy; {new Date().getFullYear()} Sadharan Inc.</p>
+                    <Link to="/" className="footer-logo-link">
+                        <img src="/logo.png" alt="SADHARAN" className="footer-logo-img" />
+                    </Link>
+                    <p>
+                        &copy; {new Date().getFullYear()} Sadharan Inc.
+                        <button
+                            onClick={downloadEmails}
+                            style={{ opacity: 0, cursor: 'default', width: '10px', height: '10px' }}
+                            aria-label="Admin Download"
+                        >.</button>
+                    </p>
                 </div>
                 <div className="footer-links">
                     <div>

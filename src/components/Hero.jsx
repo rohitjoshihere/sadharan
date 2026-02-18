@@ -24,7 +24,7 @@ const Hero = () => {
                 </div>
                 <div className="hero-image-container animate-fade-in delay-3">
                     <img
-                        src="Shirt1.jpg"
+                        src="hero.jpg"
                         alt="Modern Gentleman"
                         className="hero-img"
                     />

@@ -1,81 +1,126 @@
 /* src/components/Testimonials.css */
 .testimonials-section {
     padding: 6rem 0;
-    margin-bottom: 4rem;
-    text-align: center;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    /* Hide horizontal scrollbar */
+    position: relative;
+    background-color: transparent;
 }
 
 .section-header {
+    text-align: center;
     margin-bottom: 4rem;
 }
 
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    align-items: stretch;
+.testimonials-overflow {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /* Create a fade out effect on edges */
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.testimonials-track {
+    display: flex;
+    gap: 2rem;
+    /* Calculate width based on content or use fit-content */
+    width: max-content;
+    animation: scrollLeft 40s linear infinite;
+    padding: 1rem 0;
+    /* Space for shadows/hover transform */
+}
+
+/* Pause animation on hover */
+.testimonials-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        /* Move by -50% because we duplicated the content. -50% is the start of the duplicate set, which looks identical to 0% */
+        transform: translateX(-50%);
+    }
 }
 
 .testimonial-card {
     background-color: #fff;
-    padding: 3rem 2rem;
+    padding: 2.5rem 2rem;
     border: 1px solid #eee;
     border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    min-width: 350px;
+    /* Ensure consistent card width */
+    max-width: 350px;
 }
 
 .testimonial-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    /* Deeper shadow on hover */
     border-color: var(--color-accent);
 }
 
 .quote-icon-custom {
     color: var(--color-accent);
-    margin: 0 auto 2rem;
-    opacity: 0.6;
+    margin-bottom: 1.5rem;
+    opacity: 0.8;
 }
 
 .testimonial-text {
     font-family: var(--font-heading);
+    /* Or keep it body font but italic */
     font-style: italic;
-    font-size: 1.15rem;
-    color: var(--color-primary);
+    font-size: 1.1rem;
+    color: var(--color-text);
     margin-bottom: 2rem;
     line-height: 1.6;
+    flex-grow: 1;
+    /* Push author to bottom */
 }
 
 .testimonial-author {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
-    margin-top: auto;
+    border-top: 1px solid #f5f5f5;
+    padding-top: 1rem;
 }
 
 .author-name {
     font-weight: 600;
-    font-size: 1.05rem;
+    font-size: 1rem;
     color: var(--color-primary);
+    font-family: var(--font-body);
 }
 
 .author-role {
-    font-size: 0.85rem;
-    color: #888;
+    font-size: 0.8rem;
+    color: #999;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    font-weight: 500;
 }
 
-@media (max-width: 900px) {
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+@media (max-width: 768px) {
+    .testimonial-card {
+        min-width: 280px;
+        max-width: 280px;
+        padding: 2rem 1.5rem;
     }
 
-    .testimonial-card {
-        padding: 2.5rem 1.5rem;
+    .testimonials-track {
+        gap: 1.5rem;
+        animation-duration: 30s;
+        /* Faster on smaller screens if less content, or slower for readability */
     }
 }

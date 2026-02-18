@@ -12,7 +12,8 @@
 .navbar.scrolled {
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    padding: 1rem 0;
+    padding: 0.5rem 0;
+    /* Reduced padding when scrolled */
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     color: var(--color-text);
 }
@@ -75,6 +76,7 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
+display: none
 }
 
 .icon-btn {
@@ -153,5 +155,38 @@
     .mobile-menu-btn {
         display: block;
         z-index: 1001;
+    }
+}
+
+/* Logo Image Styling */
+.navbar-logo-img {
+    height: 60px;
+    /* Base height for desktop */
+    width: auto;
+    object-fit: contain;
+    /* Blend mode to make white background transparent */
+    mix-blend-mode: multiply;
+    filter: contrast(1.1);
+    /* Slightly enhance contrast */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo-img:hover {
+    transform: scale(1.02);
+    /* Subtle hover effect instead of height change */
+    filter: contrast(1.2);
+}
+
+.navbar-logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .navbar-logo-img {
+        height: 45px;
+        /* Adjust for mobile */
     }
 }
