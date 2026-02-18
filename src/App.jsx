@@ -8,6 +8,8 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import ScrollObserver from './components/ScrollObserver';
 import ScrollToTop from './components/ScrollToTop';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 function AppContent() {
   // Use ScrollObserver logic here inside Router context
@@ -21,6 +23,8 @@ function AppContent() {
         <Route path="/about" element={<About />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
       </Routes>
       <Footer />
     </>

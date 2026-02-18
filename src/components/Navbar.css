@@ -73,10 +73,7 @@
 }
 
 .navbar-icons {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-display: none
+    display: none
 }
 
 .icon-btn {
@@ -126,6 +123,11 @@ display: none
         background-color: rgba(255, 255, 255, 0.98);
         /* Solid background on mobile */
     }
+    .navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
 
     .navbar-links {
         position: fixed;
