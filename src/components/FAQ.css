@@ -67,8 +67,24 @@
     transform: rotate(180deg);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 4rem 2rem;
+    }
+
     .faq-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .faq-question {
+        padding: 1.25rem 0;
+        font-size: 1rem;
+        gap: 1rem;
+        /* Space between text and icon */
+    }
+
+    .faq-answer {
+        font-size: 0.95rem;
     }
 }

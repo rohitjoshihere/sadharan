@@ -1,5 +1,5 @@
 .story-section {
-    padding: 8rem 0;
+    padding: 3rem 0;
     overflow: hidden;
 }
 
@@ -94,20 +94,30 @@
 @media (max-width: 900px) {
     .story-grid {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 2rem;
     }
 
     .story-image-wrapper {
         height: 400px;
+        order: -1;
+        /* Image always on top on mobile */
+    }
+
+    /* If even smaller */
+    @media (max-width: 480px) {
+        .story-image-wrapper {
+            height: 300px;
+        }
+
+        .story-title {
+            font-size: 2rem;
+        }
     }
 
     .story-content {
         padding-left: 0;
         text-align: center;
-    }
-
-    .story-title {
-        font-size: 2.5rem;
+        padding: 0 1rem;
     }
 
     .story-text {

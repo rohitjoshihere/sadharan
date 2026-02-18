@@ -166,7 +166,7 @@
 
     .hero-text {
         padding-right: 0;
-        order: 1;
+        order: 2;
     }
 
     .hero-subtitle {
@@ -181,33 +181,50 @@
         /* Stack buttons if needed on very small screens */
     }
 
-    .hero-image-container {
-        order: 2;
-        max-height: 500px;
-        width: 100%;
+    .hero-title {
+        font-size: 2.8rem;
     }
 
     .hero-badge {
-        top: 1rem;
-        right: 1rem;
-        padding: 0.75rem;
+        position: static;
+        margin-top: -3rem;
+        /* overlap image slightly or place below */
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
+        z-index: 10;
+    }
+
+    .hero-image-container {
+        order: 1;
+        max-height: 400px;
+        width: 100%;
+        margin-bottom: 2rem;
     }
 }
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2.5rem;
-        /* Smaller font for phones */
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
     }
 
     .hero-actions {
         flex-direction: column;
         width: 100%;
+        gap: 1rem;
     }
 
     .btn-primary,
     .btn-secondary {
         width: 100%;
         justify-content: center;
+    }
+
+    .hero-badge {
+        width: 90%;
     }
 }

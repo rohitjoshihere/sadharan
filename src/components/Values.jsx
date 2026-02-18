@@ -21,7 +21,7 @@ const values = [
 
 const Values = () => {
     return (
-        <section className="values-section container">
+        <section className="values-section">
             <div className="values-header">
                 <h2 className="values-title">Our Philosophy</h2>
                 <div className="values-divider"></div>

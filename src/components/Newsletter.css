@@ -129,5 +129,15 @@
 
     .newsletter-title {
         font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .newsletter-desc {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .input-group {
+        width: 100%;
     }
 }

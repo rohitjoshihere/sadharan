@@ -119,6 +119,10 @@
 }
 
 @media (max-width: 900px) {
+    .launch-section {
+        padding: 5rem 0;
+    }
+
     .launch-container {
         flex-direction: column-reverse;
         gap: 3rem;
@@ -127,12 +131,17 @@
 
     .launch-content {
         max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .launch-title {
+        font-size: 2.2rem;
     }
 
     .launch-image-wrapper {
         width: 100%;
         max-width: 400px;
-        height: 400px;
+        height: 350px;
         margin: 0 auto;
     }
 
@@ -142,6 +151,7 @@
 
     .mini-form button {
         padding: 1rem;
+        width: 100%;
     }
 }
 
