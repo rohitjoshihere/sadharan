@@ -1,6 +1,7 @@
 .benefits-section {
-    padding: 6rem 0;
-    border-bottom: 1px solid #e0e0e0;
+    padding: 2rem 0;
+    background-color: #E8E4DF;
+    /* border-bottom: 1px solid #e0e0e0; */
 }
 
 .benefits-grid {
@@ -24,6 +25,7 @@
     margin-bottom: 0.5rem;
     background-color: var(--color-secondary);
     padding: 1.2rem;
+    border: 1px solid var(--color-accent);
     border-radius: 50%;
     display: flex;
     align-items: center;

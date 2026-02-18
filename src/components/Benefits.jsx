@@ -15,7 +15,7 @@ const features = [
     {
         icon: <Truck size={32} strokeWidth={1.5} />,
         title: "Free Shipping",
-        desc: "Complimentary shipping on all orders above ₹ 4,999."
+        desc: "Complimentary shipping on all orders above ₹ 1,299."
     },
     {
         icon: <Clock size={32} strokeWidth={1.5} />,
@@ -26,7 +26,7 @@ const features = [
 
 const Benefits = () => {
     return (
-        <section className="benefits-section container">
+        <section className="benefits-section">
             <div className="benefits-grid">
                 {features.map((feature, index) => (
                     <div key={index} className="benefit-item">

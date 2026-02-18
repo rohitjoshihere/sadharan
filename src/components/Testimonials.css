@@ -5,7 +5,7 @@
     overflow: hidden;
     /* Hide horizontal scrollbar */
     position: relative;
-    background-color: transparent;
+    background-color: #E8E4DF;
 }
 
 .section-header {
