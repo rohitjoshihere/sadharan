@@ -30,7 +30,7 @@ const Hero = () => {
                     />
                     <div className="hero-badge">
                         <span>New Arrival</span>
-                        <strong>Autumn '24</strong>
+                        <strong>Autumn '26</strong>
                     </div>
                 </div>
             </div>
