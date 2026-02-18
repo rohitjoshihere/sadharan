@@ -15,7 +15,7 @@ const Hero = () => {
                     </p>
                     <div className="hero-actions delay-2">
                         <Link to="/shop" className="btn-primary">
-                            Explore Collection <ArrowRight size={18} />
+                            View Preview <ArrowRight size={18} />
                         </Link>
                         <Link to="/about" className="btn-secondary">
                             Our Story
