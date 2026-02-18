@@ -41,9 +41,10 @@ const Contact = () => {
                     </div>
                     <div className="info-item">
                         <h3>Visit Us</h3>
-                        <p>Kanpur, UP</p>
+                        {/* <p>Tulip Green Apartments</p> */}
+                        <p>Swaraj Nagar, Kanpur, Uttar Pradesh</p>
                     </div>
-                    <div className="info-item">
+                    <div className="info-item" onClick={() => window.open('https://www.instagram.com/sadharan.co.in/', '_blank')} style={{ cursor: 'pointer' }}>
                         <h3>Follow Us</h3>
                         <p>@sadharan.co.in</p>
                     </div>
@@ -90,8 +91,7 @@ const Contact = () => {
                 </form>
                 <div className="contact-map">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.114777264883!2d77.209021!3d28.613939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd3e4cbcfc57%3A0x6bba32c1b48b59e3!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1689620000000!5m2!1sen!2sin"
-                        width="100%"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.38070785848!2d80.24226109865316!3d26.464500774588462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c370064cd0087%3A0x7d89533867b6a452!2sTulip%20Green%20Apartments!5e0!3m2!1sen!2sin!4v1771429445328!5m2!1sen!2sin" width="100%"
                         height="450"
                         style={{ border: 0 }}
                         allowFullScreen=""
