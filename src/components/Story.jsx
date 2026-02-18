@@ -6,7 +6,7 @@ const Story = () => {
             <div className="story-grid">
                 <div className="story-image-wrapper animate-on-scroll">
                     <img
-                        src="https://images.unsplash.com/photo-1490481651871-32d2e76f8730?ixlib=rb-4.0.3&auto=format&fit=crop&w=1770&q=80"
+                        src="/about.JPG"
                         alt="Sadharan Aesthetic"
                         className="story-img"
                     />
