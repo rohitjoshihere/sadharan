@@ -1,7 +1,13 @@
+import SEO from '../components/SEO';
 
 const PrivacyPolicy = () => {
     return (
         <main className="container policy-page" style={{ paddingTop: '8rem', paddingBottom: '4rem', maxWidth: '800px' }}>
+            <SEO
+                title="Privacy Policy"
+                description="Read our privacy policy to understand how we collect, use, and protect your personal data at Sadharan."
+                keywords="privacy policy, data protection, sadharan legal, user privacy"
+            />
             <h1 style={{ marginBottom: '2rem' }}>Privacy Policy</h1>
             <p style={{ marginBottom: '1rem' }}>Last updated: {new Date().toLocaleDateString()}</p>
 

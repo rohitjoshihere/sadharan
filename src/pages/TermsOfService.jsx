@@ -1,7 +1,13 @@
+import SEO from '../components/SEO';
 
 const TermsOfService = () => {
     return (
         <main className="container policy-page" style={{ paddingTop: '8rem', paddingBottom: '4rem', maxWidth: '800px' }}>
+            <SEO
+                title="Terms of Service"
+                description="Review the terms and conditions for using the Sadharan website and purchasing our products."
+                keywords="terms of service, legal terms, sadharan conditions, user agreement"
+            />
             <h1 style={{ marginBottom: '2rem' }}>Terms of Service</h1>
             <p style={{ marginBottom: '1rem' }}>Last updated: {new Date().toLocaleDateString()}</p>
 

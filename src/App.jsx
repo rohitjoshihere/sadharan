@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -33,11 +34,13 @@ function AppContent() {
 
 function App() {
   return (
-    <Router>
-      <div className="app">
-        <AppContent />
-      </div>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <div className="app">
+          <AppContent />
+        </div>
+      </Router>
+    </HelmetProvider>
   );
 }
 

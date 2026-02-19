@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SEO from '../components/SEO';
 import FAQ from '../components/FAQ';
 import './Contact.css';
 
@@ -26,6 +27,11 @@ const Contact = () => {
 
     return (
         <div className="contact-page container">
+            <SEO
+                title="Contact Us"
+                description="Get in touch with the Sadharan team. Visit our store in Kanpur or reach out for inquiries about our minimalist clothing collection."
+                keywords="contact sadharan, customer support, kanpur fashion store, email us"
+            />
             <div className="contact-header">
                 <h1 className="contact-title">Get in Touch</h1>
                 <p className="contact-subtitle">
